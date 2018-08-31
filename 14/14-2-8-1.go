@@ -35,7 +35,7 @@ func printFunc(futureSource chan string) chan []string {
 }
 
 func main() {
-	futureSource := readFile("future_promise.go")
+	futureSource := readFile("/Users/yuyataki/GoProjects/go-system-programing/14/14-2-8-2.go")
 	futureFuns := printFunc(futureSource)
 	fmt.Println(strings.Join(<-futureFuns, "\n"))
 }
